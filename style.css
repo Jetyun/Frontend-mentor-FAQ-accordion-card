@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+padding:0;
+margin:0;
+box-sizing:content-box;
+font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{background-image:linear-gradient( hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+min-height: 700px;}
+
+section{
+    width:300px;
+    min-height:430px;
+    margin:auto;
+    margin-top:120px;
+    background-color: white;
+    border-radius: 20px;
+    }
+
+.symbol{
+position: relative;
+height:110px;
+background-color:  white;
+border-radius: 20px;
+display:block;
+}
+.main{
+position:relative;
+background-color:  transparent;
+/* transform to position svg file in the section */
+transform: translate(30px, -128px);
+}
+.shadow{
+position:relative;
+/* transform to position svg file in the section */
+transform: translate(30px, -230px);
+
+background-color: transparent;
+}
+h1{
+background-color: white;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 2.2rem;
+color:hsl(238, 29%, 16%);
+}
+details, summary, p{
+font-size: 12px;
+background-color: white;
+padding-bottom:10px;
+margin-left: 10px;
+color: hsl(238, 29%, 16%)
+}
+
+summary{
+display: flex;
+justify-content: space-between;
+}
+
+::marker{
+    content: none;
+}
+.icon{
+margin-right: 20px;
+background-color: white;
+
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    opacity: 40%;
+    color:hsl(240, 5%, 91%);
+}
+/* to make the last detail tag to have rounder border to match with the section border radius */
+.roundborder{
+border-radius: 20px;
+}
+
+summary:active{
+    color:hsl(14, 88%, 65%);
+}
+
+details[open] summary{
+font-weight: 700;
+}
+
+details[open] .icon{
+    transform: rotate(180deg);
+}
+
+.big{
+display: none;
+
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 1440px){
+
+    section{
+        width:780px;
+        min-height:430px;
+        margin:auto;
+        margin-top:120px;
+        }
+    .symbol{
+        height:430px;
+        width:360px;
+        float: left;
+    }
+    .main{
+        /* transform to position svg file in the section */
+        transform: translate(-50px,70px);  
+        z-index: 0;   
+        }
+.shadow{
+
+        transform: translate(-570px, -560px);
+        }
+    .FAQ{
+        overflow: auto;
+        margin-right: 50px;
+
+    }
+    h1{
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 15px;
+    }
+.big{
+display:inline;
+}
+.small{
+display: none;
+}
+.box{
+    transform: translate(-90px,-130px);
+    position: absolute;
+
+}
+
+}
